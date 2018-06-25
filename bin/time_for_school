@@ -19,11 +19,19 @@ steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
 
-jim = User.new
+jim = Student.new
 jim.first_name = "Jim"
 jim.last_name = "Halpert"
 
 more_knowledge = avi.teach
-jim.learn(more_knowledge)
 
+steve.learn(more_knowledge)
+
+even_more_knowledge = avi.teach
+
+jim.learn(even_more_knowledge)
+
+puts "Steve also learned: '#{steve.knowledge[1]}'."
+
+puts "Jim learned: '#{jim.knowledge[0]}'."
 
